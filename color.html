@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Color__Picker1 input[type="text"] {
+         
+            transform: translateY(0px);
+            background-color: #EEF4FF;
+            outline: none;
+            padding: 18px;
+            color: #404040;
+        }
+
+        .Color__Picker1 input[type="color"] {
+            display: block;
+            width: 10%;
+            float: left;
+            transform: translate(8px, 10px);
+            border: none;
+            background-color: #EEF4FF;
+        }
+
+        .Color__Picker1 input {
+            border: none;
+            font-size: calc(8pt + 0.15vw);
+        }
+
+        /* 
+input[type="text"]:invalid {
+    outline: 2px solid red;
+    outline: none;
+} */
+
+        .Color__Picker1 {
+            width: 30%;
+            background-color: #EEF4FF;
+        }
+
+        .Color__Picker1 img {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <div class="Color__Picker1">
+                <input type="color" id="colorpickers" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                    value="#000000">
+
+                <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#000000" id="hexcolors"></input>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
